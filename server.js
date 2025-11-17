@@ -3,10 +3,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://aamirejazahmed_db_user:qpAoZXw0tsdvXpXf@rsto.iodiwqh.mongodb.net/?appName=RSTO', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-}).then(() => {
+mongoose.connect('mongodb+srv://aamirejazahmed_db_user:qpAoZXw0tsdvXpXf@rsto.iodiwqh.mongodb.net/?appName=RSTO').then(() => {
   console.log('Connected to MongoDB');
 }).catch(err => {
   console.error('MongoDB connection error:', err);
